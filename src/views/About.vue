@@ -11,13 +11,13 @@
               <v-list-item-subtitle>Muhammad Harisz Ryadi</v-list-item-subtitle>
               <v-divider></v-divider>
               <v-list-item-title>Tempat, Tanggal Lahir</v-list-item-title>
-              <v-list-item-subtitle>17 Oktober 1995</v-list-item-subtitle>
+              <v-list-item-subtitle>Cimahi, 17 Oktober 1995</v-list-item-subtitle>
               <v-divider></v-divider>
               <v-list-item-title>Alamat</v-list-item-title>
               <v-list-item-subtitle>Jl. Tanimulya Raya, Bandung Barat</v-list-item-subtitle>
               <v-divider></v-divider>
               <v-list-item-title>Hobi</v-list-item-title>
-              <v-list-item-subtitle>Ngoding</v-list-item-subtitle>
+              <v-list-item-subtitle>Basket</v-list-item-subtitle>
           </v-list-item-content>
       </v-list-item>
       <v-list-item>
@@ -26,7 +26,7 @@
               <v-list-item-subtitle>Yussi Sri Rezeki</v-list-item-subtitle>
               <v-divider></v-divider>
               <v-list-item-title>Tempat, Tanggal Lahir</v-list-item-title>
-              <v-list-item-subtitle>14 Oktober 1996</v-list-item-subtitle>
+              <v-list-item-subtitle>Cimahi, 14 Oktober 1996</v-list-item-subtitle>
               <v-divider></v-divider>
               <v-list-item-title>Alamat</v-list-item-title>
               <v-list-item-subtitle>Jl. Sangkuriang, Cimahi</v-list-item-subtitle>

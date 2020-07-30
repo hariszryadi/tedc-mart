@@ -80,7 +80,9 @@
         },
         methods: {
             ...mapActions({
-                setSideBar : 'setSideBar',
+                setSideBar(value) {
+                    this.$store.commit('setSideBar', value)
+                },
                 setStatusDialog : 'dialog/setStatus',
                 setComponent : 'dialog/setComponent',
                 setAuth : 'auth/set',
