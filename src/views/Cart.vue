@@ -46,7 +46,7 @@
                             <span class="title">Rp. {{ totalPrice.toLocaleString('id-ID') }}</span>
                         </v-flex>
                         <v-flex pa-1 xs6 text-right>
-                            <v-btn color="primary" @click="checkout" :disabled="totalQuantity==0">
+                            <v-btn color="primary" @click="checkout()" :disabled="totalQuantity==0">
                                 <v-icon>mdi-cart-arrow-right</v-icon> &nbsp; Checkout
                             </v-btn>
                         </v-flex>
@@ -63,6 +63,7 @@
         name: 'cart',
         computed: {
             ...mapGetters({
+                user: 'auth/user',
                 carts: 'cart/carts',
                 countCart: 'cart/count',
                 totalPrice: 'cart/totalPrice',
@@ -76,11 +77,18 @@
                 setAlert: 'alert/set',
                 addCart: 'cart/add',
                 removeCart: 'cart/remove',
-                setCart: 'cart/set'
+                setCart: 'cart/set',
+                setAuth: 'auth/set',
             }),
             checkout() {
-                this.$emit('closed', false)
-                this.$router.push({path: "/checkout"})
+                if (this.user.api_token==null) {
+                    this.$emit('closed', false)
+                    this.$router.push({path: "/checkout"})
+                } else {
+                    this.$emit('closed', false)
+                    this.$router.push({path: "/checkout"})
+                    this.close()
+                }
             },
             close() {
                 this.setStatusDialog(false)
