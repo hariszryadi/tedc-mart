@@ -3,20 +3,20 @@
         <v-subheader>Histori Belanja</v-subheader>
         <v-card flat>
             <v-container>
-                <v-simple-table>
-                    <tbody>
-                        <tr v-for="item in items" :key="item.id">
-                            <td>
-                                Invoice: {{ item.invoice_number }}
-                                <div class="success--text title">Rp. {{ item.total_price.toLocaleString('id-ID') }}</div>
-                                <small>date: {{ item.updated_at }}. courier: {{ item.courier_service }}</small>
-                            </td>
-                            <td>
+                <v-card v-for="item in items" :key="item.id" :to="'detail-order/' + item.id" style="margin-bottom:8px">
+                    <v-list>
+                        <v-list-item>
+                            <v-list-item-content>
+                                <v-list-item-subtitle>
+                                    Invoice : {{ item.invoice_number }}
+                                    <div class="success--text title">Rp. {{ item.total_price.toLocaleString('id-ID') }}</div>
+                                    <small>date: {{ item.updated_at }}. courier: {{ item.courier_service }}</small>
+                                </v-list-item-subtitle>
                                 {{ item.status }}
-                            </td>
-                        </tr>
-                    </tbody>
-                </v-simple-table>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-list>
+                </v-card>
             </v-container>
         </v-card>
     </div>

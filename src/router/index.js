@@ -75,6 +75,12 @@ const router = new VueRouter({
       name: 'edit-profile',
       component: () => import('../views/EditProfile.vue'),
       meta: { auth:true }
+    },
+    {
+      path: '/detail-order/:orderId',
+      name: 'detail-order',
+      component: () => import('../views/DetailOrder.vue'),
+      meta: { auth:true }
     }
   ]
 })

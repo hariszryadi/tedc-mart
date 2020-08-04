@@ -17,7 +17,7 @@
               <v-list-item-subtitle>Jl. Tanimulya Raya, Bandung Barat</v-list-item-subtitle>
               <v-divider></v-divider>
               <v-list-item-title>Hobi</v-list-item-title>
-              <v-list-item-subtitle>Basket</v-list-item-subtitle>
+              <v-list-item-subtitle>Hiking</v-list-item-subtitle>
           </v-list-item-content>
       </v-list-item>
       <v-list-item>
